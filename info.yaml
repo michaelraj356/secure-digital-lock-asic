@@ -1,0 +1,44 @@
+project:
+  title: "Secure Digital Lock System"
+  author: "Michael Raj"
+  description: "4-digit FSM-based digital lock with auto-lock and lockout after 3 failed attempts"
+  language: "Verilog"
+  clock_hz: 10000000
+
+  tiles: "1x1"
+
+  top_module: "tt_um_secure_lock"
+
+  source_files:
+    - "secure_lock/secure_lock.v"
+
+pinout:
+  ui:
+    - "digit0"
+    - "digit1"
+    - "digit2"
+    - "digit3"
+    - "enter"
+    - ""
+    - ""
+    - ""
+
+  uo:
+    - "unlock"
+    - "error"
+    - "lockout"
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+
+  uio:
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
+    - ""
